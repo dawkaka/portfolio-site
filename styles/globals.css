@@ -1,11 +1,93 @@
+:root{
+ --accents-1: #FAFAFA;
+ --accents-2: #EAEAEA;
+ --accents-3: #999;
+ --accents-4: #444;
+ --accents-5: #111;
+ --error-lighter: #F7D4D6;
+ --error-light: #FF1A1A;
+ --error-default: #E00;
+ --error-dark: #C50000;
+ --violet-lighter: #D8CCF1;
+ --violet-light: #8A63D2;
+ --violet: #7928CA;
+ --violet-dark: #4C2889;
+ --success-lighter: #D3E5FF;
+ --success-light: #3291FF;
+ --success: #0070F3;
+ --success-dark:#0761D1;
+ --purple: #F81CE5;
+ --magenta: #EB367F;
+ --pink: #FF0080;
+ --root-padding: .7rem;
+ --yellow: #FFF500;
+ --secondary-lighter: var(--accents-2);
+ --secondary-light: var(--accents-3);
+ --secondary: var(--accents-5);
+ --secondary-dark: var(--accents-7);
+ --font-sans: "Inter",
+   -apple-system, BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+   --space: 4px;
+   --space-2x: 8px;
+   --space-4x: 16px;
+   --space-8x: 32px;
+   --space-16x: 64px;
+   --space-24x: 96px;
+   --space-32x: 128px;
+   --space-48x: 192px;
+   --space-64x: 256px;
+   --space-small: 32px;
+   --space-medium: 40px;
+   --space-large: 48px;
+   --space-gap: 24px;
+   --space-gap-half: 12px;
+   --space-gap-quarter: var(--space-2x);
+   --gap: var(--space-gap);
+   --gap-half: var(--space-gap-half);
+   --gap-quarter: var(--space-gap-quarter);
+   --gap-double: var(--space-large);
+   --space-negative: -4px;
+   --space-2x-negative: -8px;
+   --space-4x-negative: -16px;
+   --space-8x-negative: -32px;
+   --space-16x-negative: -64px;
+   --space-24x-negative: -96px;
+   --space-32x-negative: -128px;
+   --space-48x-negative: -192px;
+   --space-64x-negative: -256px;
+   --space-small-negative: -32px;
+   --space-medium-negative: -40px;
+   --space-large-negative: -48px;
+   --space-gap-negative: -24px;
+   --space-gap-half-negative: -12px;
+   --space-gap-quarter-negative: var(--geist-space-2x-negative);
+   --gap-negative: var(--space-gap-negative);
+   --gap-half-negative: var(--space-gap-half-negative);
+   --gap-quarter-negative: var(--space-gap-quarter-negative);
+   --gap-double-negative: var(--space-large-negative);
+   --page-margin: var(--space-gap);
+   --page-width: 1000px;
+   --page-width-with-margin: 1048px;
+   --radius: 5px;
+   --marketing-radius: 8px;
+   --font-sans: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  }
+
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--foreground);
+	background-color: var(--background);
+	font-family: var(--font-sans);
+  overflow: hidden;
 }
-
+p{
+  font-weight: 500;
+  line-height: 2.5;
+  letter-spacing: .15em
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -13,4 +95,18 @@ a {
 
 * {
   box-sizing: border-box;
+  list-style: none;
+  border: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (min-width: 1100px) {
+   body, main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
 }
