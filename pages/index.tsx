@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 
 import Layout from '../components/layout'
+import Work from '../components/work'
+import Skills from '../components/skill'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -10,11 +12,10 @@ const Home: NextPage = () => {
       <main className={styles.main}>
       <div className = {styles.heroMain}>
       <section className={styles.sectPrimary}>
-
       <div className={styles.heroContentContainer}>
        <div className={styles.heroContent}>
         <h1 className={styles.headerHuge}>YUSSIF MOHAMMED</h1>
-        <p className={styles.text80}>
+        <p className={`${styles.text80} ${styles.textNormal}`}>
          Hello, I am Yussif "Dawkaka" Mohammed, a flexible hard worker with over 3 years of experience in software engineering who is passionate
          about programming and ready to help companies expeditiously achieve their targets.
          </p>
@@ -40,7 +41,7 @@ const Home: NextPage = () => {
          </li>
          <li className={styles.social}>
          <a href="mailto:yousiph77@gmail.com"target="__blank">
-         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" fill="var(--foreground)">
+         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" fill="var(--foreground)">
          <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-.141-6.333c.63 0 1.141-.512 1.141-1.142v-9.05c0-.63-.511-1.142-1.141-1.142h-13.718c-.63 0-1.141.512-1.141 1.142v9.05c0 .63.511 1.142 1.141 1.142h13.718zm-6.859-4.058l-6.228-4.321-.014 7.712h12.457v-7.712l-6.215 4.321zm5.913-6.609c-1.745 1.215-5.913 4.153-5.913 4.153l-5.947-4.153h11.86z"/>
           </svg>
          </a>
@@ -64,7 +65,13 @@ const Home: NextPage = () => {
 
       </section>
       </div>
+
+      <Work />
+
+      <Skills />
+
       </main>
+
 
       <footer className={styles.footer}>
 

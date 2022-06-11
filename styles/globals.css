@@ -1,9 +1,15 @@
 :root{
- --accents-1: #FAFAFA;
- --accents-2: #EAEAEA;
- --accents-3: #999;
- --accents-4: #444;
- --accents-5: #111;
+  --background: #0a2540;
+  --primaryColor: #0a2540;
+  --foreground: #fff;
+  --accents-1: #FAFAFA;
+  --accents-2: #EAEAEA;
+  --accents-3: #999;
+  --accents-4: #444;
+  --accents-5: #666;
+  --accents-6: #444;
+  --accents-7: #333;
+  --accents-8: 111;
  --error-lighter: #F7D4D6;
  --error-light: #FF1A1A;
  --error-default: #E00;
@@ -47,31 +53,8 @@
    --gap-quarter: var(--space-gap-quarter);
    --gap-double: var(--space-large);
    --space-negative: -4px;
-   --space-2x-negative: -8px;
-   --space-4x-negative: -16px;
-   --space-8x-negative: -32px;
-   --space-16x-negative: -64px;
-   --space-24x-negative: -96px;
-   --space-32x-negative: -128px;
-   --space-48x-negative: -192px;
-   --space-64x-negative: -256px;
-   --space-small-negative: -32px;
-   --space-medium-negative: -40px;
-   --space-large-negative: -48px;
-   --space-gap-negative: -24px;
-   --space-gap-half-negative: -12px;
-   --space-gap-quarter-negative: var(--geist-space-2x-negative);
-   --gap-negative: var(--space-gap-negative);
-   --gap-half-negative: var(--space-gap-half-negative);
-   --gap-quarter-negative: var(--space-gap-quarter-negative);
-   --gap-double-negative: var(--space-large-negative);
-   --page-margin: var(--space-gap);
-   --page-width: 1000px;
-   --page-width-with-margin: 1048px;
-   --radius: 5px;
-   --marketing-radius: 8px;
-   --font-sans: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-  }
+   --gradientAnimated: linear-gradient(90deg,var(--success),var(--yellow),var(--pink),var(--success))
+ }
 
 
 html,
@@ -79,15 +62,9 @@ body {
   padding: 0;
   margin: 0;
   color: var(--foreground);
-	background-color: var(--background);
 	font-family: var(--font-sans);
-  overflow: hidden;
 }
-p{
-  font-weight: 500;
-  line-height: 2.5;
-  letter-spacing: .15em
-}
+
 a {
   color: inherit;
   text-decoration: none;
