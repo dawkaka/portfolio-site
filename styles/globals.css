@@ -1,5 +1,5 @@
 :root{
-  --background: #0a2540;
+  --background:rgba(0,0,0,.99);
   --primaryColor: #0a2540;
   --foreground: #fff;
   --accents-1: #FAFAFA;
@@ -16,7 +16,7 @@
  --error-dark: #C50000;
  --violet-lighter: #D8CCF1;
  --violet-light: #8A63D2;
- --violet: #7928CA;
+ --violet: #7510F7;
  --violet-dark: #4C2889;
  --success-lighter: #D3E5FF;
  --success-light: #3291FF;
@@ -53,7 +53,7 @@
    --gap-quarter: var(--space-gap-quarter);
    --gap-double: var(--space-large);
    --space-negative: -4px;
-   --gradientAnimated: linear-gradient(90deg,var(--success),var(--yellow),var(--pink),var(--success))
+   --gradientAnimated: linear-gradient(90deg,var(--success),var(--pink),var(--pink),var(--yellow),var(--yellow),var(--success))
  }
 
 
@@ -63,6 +63,8 @@ body {
   margin: 0;
   color: var(--foreground);
 	font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 a {
