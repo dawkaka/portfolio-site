@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Work from '../components/work'
 import Skills from '../components/skill'
 import Projects from '../components/projects'
+import Education from '../components/education'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -72,6 +73,8 @@ const Home: NextPage = () => {
       <Skills />
 
       <Projects />
+
+      <Education />
 
       </main>
 

@@ -167,7 +167,8 @@
 }
 
 .workSect {
-  --styleColor: var(--success)
+  --styleColor: var(--success);
+  --gradientStart: white
 }
 
 .headerCenter {
@@ -183,11 +184,11 @@
 .line {
   width: 1px;
   height: 120px;
-  background-image: linear-gradient(white,var(--styleColor));
+  background-image: linear-gradient(var(--gradientStart),var(--styleColor));
 }
 
 .line2 {
-  background-image: linear-gradient(var(--styleColor),white);
+  background-image: linear-gradient(var(--styleColor),var(--gradientStart));
 }
 
 
@@ -220,7 +221,7 @@
   top: 0;
   border-radius: 50%;
   border: 1px solid var(--styleColor);
-  background-color: white;
+  background-color: var(--background);
   transform: translateX(-50%);
 }
 
@@ -406,7 +407,8 @@ animation: fade2 24s linear infinite;
   margin-top: -30px;
   background-color: white;
   padding-inline: var(--gap);
-  --styleColor: var(--pink)
+  --styleColor: var(--pink);
+  --gradientStart: white
 }
 .skewSectP > div {
   --background: white;
@@ -522,6 +524,18 @@ animation: fade2 24s linear infinite;
   opacity: 1;
   margin-left: 5px;
 }
+
+
+
+.eduSect {
+  background-color: var(--background);
+  padding-block: 100px;
+  padding-inline: var(--gap);
+  --styleColor: var(--yellow);
+  --gradientStart: var(--background);
+  --primaryColor: white;
+}
+
 
 
 /*  */
