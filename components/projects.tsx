@@ -13,12 +13,12 @@ const ProjectItem: FunctionComponent<{image?: string,title:string,live?:string,
     <h4>{title}</h4>
     <p>{discrp}</p>
     <div className={styles.sourceLive}>
-    <button className={`${styles.button} ${disable}`}>
-    <a href={live} className={`${styles.button} ${disable}`}>View live</a>
-    </button>
-    <button>
-    <a href={source} className={`${styles.button} ${styles.buttonLite}`}>View source</a>
-    </button>
+    <div>
+    <a href={live} className={`${styles.button} ${disable}`}>Live</a>
+    </div>
+    <div>
+    <a href={source} className={`${styles.button} ${styles.buttonLite}`}>Source</a>
+    </div>
     </div>
     </div>
     </div>

@@ -54,13 +54,18 @@
   flex-basis: 50%;
   padding-bottom: 200px;
   background-color: var(--background);
- background-attachment: fixed;
- background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 @media (max-width: 700px) {
   .sectPrimary {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .navLinksContainer {
+    display: none;
   }
 }
 
@@ -95,6 +100,8 @@
 
 }
 
+
+
 @keyframes headerbackground {
   from{
     background-position: -10000px;
@@ -105,6 +112,7 @@
 }
 
 .heroContentContainer{
+
 }
 
 .heroContentContainer h1 {
@@ -113,6 +121,47 @@
 
 .text80 {
   max-width: 90%
+}
+
+@media  only screen and (max-width: 700px) {
+  .text80 {
+    max-width: 100%;
+    padding-inline: var(--gap)
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerHuge {
+    font-size: 3rem
+  }
+
+  .headerBig {
+    font-size: 2.5rem
+  }
+
+  .textNormal {
+    line-height: 2;
+    letter-spacing: .1em
+  }
+
+  .text80 {
+    padding-inline: 0;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  .headerHuge {
+    font-size: 2rem
+  }
+
+  .headerBig {
+    font-size: 1.5rem
+  }
+ .textNormal {
+   line-height: 1.2;
+   letter-spacing: .08em;
+ }
 }
 
 .socialsContainer {
@@ -131,6 +180,11 @@
   flex-basis: 100%;
 }
 
+@media only screen and (max-width: 700px) {
+  .socialsContainer {
+    justify-content: center;
+  }
+}
 
 .imageContainer {
   position: relative;
@@ -168,7 +222,8 @@
 
 .workSect {
   --styleColor: var(--success);
-  --gradientStart: white
+  --gradientStart: white;
+  padding-inline: var(--gap)
 }
 
 .headerCenter {
@@ -182,6 +237,7 @@
 }
 
 .line {
+  position: relative;
   width: 1px;
   height: 120px;
   background-image: linear-gradient(var(--gradientStart),var(--styleColor));
@@ -237,6 +293,48 @@
   margin-bottom: var(--gap-half)
 }
 
+@media only screen and (max-width: 550px) {
+   .line::after {
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    content: "";
+    border-radius: 50%;
+    height: 10px;
+    width: 9px;
+    border: 1px solid var(--styleColor)
+  }
+
+  .line2::after {
+    top: -10px;
+  }
+  .workContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .workInfo {
+     text-align: center;
+     padding-right: 0
+  }
+
+  .workResp {
+     text-align: center;
+     border-left: none;
+     padding-left: 0;
+     max-width: 100%;
+  }
+
+  .workResp::before {
+    display: none;
+  }
+
+  .respContainer {
+    max-width: 100%;
+    text-align: left;
+    padding-inline: var(--gap)
+  }
+
+ }
 
 .skillsSect {
   padding-block: 100px;
@@ -251,9 +349,12 @@
 }
 
 .text70 {
-  max-width: max(70%,300px)
+  max-width: max(70%,350px)
 }
 
+@media only screen and (max-width: 550px) {
+
+}
 
 .skillsAnimationContainer{
 
@@ -289,8 +390,12 @@
      top:100px;
      left: 0;
   }
+  14% {
+    top: 100px;
+    left: calc(100% + 100px)
+  }
   100% {
-    top:150px;
+    top:100px;
     left: calc(100% + 100px)
   }
 }
@@ -315,7 +420,7 @@ animation: fade2 24s linear infinite;
   position: absolute;
   opacity: 0;
   left: 0;
-  background-image: linear-gradient(90deg, var(--yellow), var(--yellow));
+  background-image: linear-gradient(90deg, var(--yellow), red);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -458,6 +563,22 @@ animation: fade2 24s linear infinite;
   margin-bottom: var(--gap-double)
 }
 
+@media only screen and (max-width: 750px) {
+ .projectItemsContainer {
+   flex-direction: column;
+   align-items: center;
+ }
+ .projectItem  {
+   width: 90%;
+ }
+}
+
+@media only screen and (max-width: 400px) {
+  .projectItem  {
+    width: 100%;
+  }
+}
+
 .projectItemInfo {
   display: flex;
   flex-direction: column;
@@ -478,18 +599,25 @@ animation: fade2 24s linear infinite;
 }
 
 .sourceLive {
-  padding-top: var(--gap-half);
+  padding-top: var(--gap);
   margin-top: auto;
   display: flex;
   gap: var(--gap);
 }
 
+.sourceLive div {
+
+}
+
 .button {
   background-color: var(--styleColor);
-  padding: .8em;
+  padding-inline: .9em;
+  padding-block: .5em;
+  font-size: .8rem;
   color: white;
   border-radius: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 .buttonLite {
