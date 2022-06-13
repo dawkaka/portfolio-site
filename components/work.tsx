@@ -1,13 +1,17 @@
-import {FunctionComponent} from 'react'
+import {FunctionComponent, useEffect} from 'react'
 
 import styles from '../styles/Home.module.css'
 
 const Work: FunctionComponent = () => {
 
-  return (
+  useEffect(()=> {
 
+
+  },[])
+
+  return (
+    <div className={styles.heroMain}>
      <section id="work" className={`${styles.skewSection} ${styles.workSect}`}>
-     <div className={styles.heroMain}>
      <div>
      <div className={styles.headerCenter}>
      <h1 className={styles.headerBig}>Work</h1>
@@ -68,8 +72,8 @@ const Work: FunctionComponent = () => {
      </div>
 
      </div>
-     </div>
      </section>
+     </div>
   )
 }
 

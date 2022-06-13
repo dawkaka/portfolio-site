@@ -1,7 +1,23 @@
-import {FunctionComponent} from 'react'
+import {FunctionComponent, CSSProperties} from 'react'
 
 
 import styles from '../styles/Home.module.css'
+
+const NavItem: FunctionComponent<{title: string; styleColor: string}> = ({title, styleColor}) => {
+  const handleClick = () => {
+    const sec = document.getElementById(title.toLowerCase())
+    if(!sec) return
+    sec.scrollIntoView()
+  }
+  return (
+     <li onClick={handleClick}
+     className={`${styles.navLink} ${styles.textNormal}`}
+     style={{'--styleColor': styleColor} as CSSProperties}
+     >
+     {title}.
+     </li>
+  )
+}
 
 const NavBar: FunctionComponent = () => {
 
@@ -13,10 +29,10 @@ const NavBar: FunctionComponent = () => {
      <h1 className={styles.logo}>Dawkaka</h1>
      </div>
      <ul className={styles.navLinksContainer}>
-     <li className={`${styles.navLink} ${styles.textNormal}`}>Home.</li>
-     <li className={`${styles.navLink} ${styles.textNormal}`}>Projects.</li>
-     <li className={`${styles.navLink} ${styles.textNormal}`}>Skills.</li>
-     <li className={`${styles.navLink} ${styles.textNormal}`}>Work.</li>
+     <NavItem title="Work" styleColor ="var(--success)" />
+     <NavItem title="Skills" styleColor ="white" />
+     <NavItem title="Projects" styleColor ="var(--pink)" />
+     <NavItem title="Education" styleColor ="var(--yellow)" />
      </ul>
      </nav>
      </header>

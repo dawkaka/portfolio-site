@@ -53,7 +53,7 @@
    --gap-quarter: var(--space-gap-quarter);
    --gap-double: var(--space-large);
    --space-negative: -4px;
-   --gradientAnimated: linear-gradient(90deg,var(--success),var(--pink),var(--pink),var(--yellow),var(--yellow),var(--success))
+   --gradientAnimated: linear-gradient(90deg,var(--success),var(--yellow),var(--pink),white,var(--success))
  }
 
 
@@ -79,6 +79,7 @@ a {
   appearance: none;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 

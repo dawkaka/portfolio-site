@@ -1,14 +1,23 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 
+import {useEffect} from 'react'
+
 import Layout from '../components/layout'
 import Work from '../components/work'
 import Skills from '../components/skill'
 import Projects from '../components/projects'
 import Education from '../components/education'
+import createObserver from '../lib/observer'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+
+ useEffect(()=> {
+   createObserver()
+ })
+
+
   return (
     <Layout>
       <main className={styles.main}>
@@ -16,7 +25,7 @@ const Home: NextPage = () => {
       <section className={styles.sectPrimary}>
       <div className={styles.heroContentContainer}>
        <div className={styles.heroContent}>
-        <h1 className={styles.headerHuge}>YUSSIF MOHAMMED</h1>
+        <h1 className={`${styles.headerHuge} hello`}>YUSSIF MOHAMMED</h1>
         <p className={`${styles.text80} ${styles.textNormal}`}>
          Hello, I am Yussif "Dawkaka" Mohammed, a flexible hard worker with over 3 years of experience in software engineering who is passionate
          about programming and ready to help companies expeditiously achieve their targets.
@@ -61,7 +70,7 @@ const Home: NextPage = () => {
 
       <div className = {styles.heroImageConatiner}>
         <div className={styles.imageContainer}>
-        <img className={styles.myImage} src={"/mo-yussif.png"} />
+        <img className={`${styles.myImage} ${styles.popLeft}`} src={"/mo-yussif.png"} />
         </div>
       </div>
 

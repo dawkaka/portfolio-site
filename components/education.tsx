@@ -9,7 +9,7 @@ const Education: FunctionComponent = () => {
   return (
 
     <div className={styles.heroMain}>
-    <section className={styles.eduSect}>
+    <section className={styles.eduSect} id="education">
     <div className={styles.headerCenter}>
     <h1 className={styles.headerBig}>Education</h1>
     </div>
