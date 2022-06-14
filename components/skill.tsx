@@ -27,8 +27,8 @@ const Skills: FunctionComponent = () => {
     <div className={styles.skillsImages}>
     <div className={`${styles.skillImage} ${styles.sIA1}`}>
     <Image
-    src="/javascript.png" layout="fill"
-    alt="javascript logo"
+    src="/css3.png" layout="fill"
+    alt="CSS3 logo"
     />
     </div>
     <div className={`${styles.skillImage} ${styles.sIA2}`}>
@@ -85,8 +85,8 @@ const Skills: FunctionComponent = () => {
      <span className={`${styles.skillGradient} ${styles.sIA2}`}>JavaScript</span>
      </li>
      <li className={`${styles.skill} ${styles.sIA3}`}>
-     React/NextJs
-     <span className={`${styles.skillGradient} ${styles.sIA3}`}>React/NextJs</span>
+     React/NextJs/Native
+     <span className={`${styles.skillGradient} ${styles.sIA3}`}>React/NextJs/Native</span>
      </li>
      <li className={`${styles.skill} ${styles.sIA4}`}>
      TypeScript
