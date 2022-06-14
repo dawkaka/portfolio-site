@@ -4,11 +4,6 @@ import styles from '../styles/Home.module.css'
 
 const Work: FunctionComponent = () => {
 
-  useEffect(()=> {
-
-
-  },[])
-
   return (
     <div className={styles.heroMain}>
      <section id="work" className={`${styles.skewSection} ${styles.workSect}`}>
@@ -52,10 +47,10 @@ const Work: FunctionComponent = () => {
 
       <ul className={styles.respContainer}>
       <li className={styles.resp}>Built the entire frontend with React.</li>
-      <li className={styles.resp}>Made use of flutterwave's to allow users to buy 'toonji coins'.</li>
+      <li className={styles.resp}>Made use of flutterwave&apos;s Api to allow users to buy &apos;toonji coins&apos;.</li>
       <li className={styles.resp}>Built a ton of fast and beautiful React components to make development easier.</li>
       <li className={styles.resp}>Handled Authentication and Authorization</li>
-      <li className={styles.resp}>Made use of websockets to build a real-time quize feature</li>
+      <li className={styles.resp}>Made use of websockets to build a real-time quiz feature</li>
       <li className={styles.resp}>Implemented awards feature using MongoDb Transactions</li>
       <li className={styles.resp}>Handled server, server configurations, files etc. using AWS EC2, Nginx and AWS S3.</li>
       <li className={styles.resp}>Built the TOONJI mobile app with React Native</li>

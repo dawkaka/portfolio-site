@@ -14,7 +14,11 @@ const ProjectItem: FunctionComponent<{image?: string,title:string,live?:string,
     <p>{discrp}</p>
     <div className={styles.sourceLive}>
     <div>
-    <a href={live} className={`${styles.button} ${disable}`}>Live</a>
+    {
+      noLive ? <button className={`${styles.button} ${disable}`}>Live</button>
+      :
+      <a href={live} className={`${styles.button} ${disable}`}>Live</a>
+    }
     </div>
     <div>
     <a href={source} className={`${styles.button} ${styles.buttonLite}`}>Source</a>

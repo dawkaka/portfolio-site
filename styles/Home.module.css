@@ -307,14 +307,18 @@
   background-position: -10000px;
   animation: headerbackground 20s linear infinite;
 }
+.imageContainer2 {
+  position: absolute;
+  top: var(--gap);
+  left: calc(-1 * var(--gap));
+  width: 100%;
+  height: 100%
+}
 
 .myImage {
-  position:absolute;
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: var(--accents-3);
-  left: calc(var(--gap) * -1);
-  top: var(--gap);
 }
 
 .skewSection {

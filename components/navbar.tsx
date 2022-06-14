@@ -3,7 +3,7 @@ import {FunctionComponent, CSSProperties} from 'react'
 
 import styles from '../styles/Home.module.css'
 
-const NavItem: FunctionComponent<{title: string; styleColor: string,delay:string}> = ({title, styleColor,delay}) => {
+const NavItem: FunctionComponent<{title: string; styleColor: string}> = ({title, styleColor}) => {
   const handleClick = () => {
     const container = document.querySelector(`.${styles.navLinksContainer}`)
     if(!container) return
@@ -15,7 +15,7 @@ const NavItem: FunctionComponent<{title: string; styleColor: string,delay:string
   return (
      <li onClick={handleClick}
      className={`${styles.navLink} ${styles.textNormal}`}
-     style={{'--styleColor': styleColor,'--delay': delay} as CSSProperties}
+     style={{'--styleColor': styleColor} as CSSProperties}
      >
      {title}.
      </li>

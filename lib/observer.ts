@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css'
 
 export default function createObserver(){
 
-  function headerIntersection(entries: IntersectionObserverEntry[], observer) {
+  function headerIntersection(entries: IntersectionObserverEntry[]) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(`${styles.fadeIn}`)
@@ -12,17 +12,17 @@ export default function createObserver(){
     });
   }
 
-  function  slideIntersectionRight(entries: IntersectionObserverEntry[], observer){
+  function  slideIntersectionRight(entries: IntersectionObserverEntry[]){
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.intersectionRatio > 0.2) {
             entry.target.classList.add(`${styles.slideRight}`)
         }
     });
   }
 
-  function  slideIntersectionLeft(entries: IntersectionObserverEntry[], observer){
+  function  slideIntersectionLeft(entries: IntersectionObserverEntry[]){
     entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.intersectionRatio > 0.2) {
             entry.target.classList.add(`${styles.slideLeft}`)
         }
     });
@@ -31,7 +31,7 @@ export default function createObserver(){
     let options = {
       // root: document.querySelector('#scrollArea'),
       // rootMargin: '0px',
-      //threshold: 0.1
+      threshold: 0.2
     }
 
     let observer = new IntersectionObserver(headerIntersection, options);

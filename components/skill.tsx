@@ -3,9 +3,6 @@ import Image from 'next/image'
 
 import styles from '../styles/Home.module.css'
 
-const imageD = 100;
-
-
 
 const Skills: FunctionComponent = () => {
 
@@ -20,22 +17,62 @@ const Skills: FunctionComponent = () => {
     </div>
     <div className={styles.textCenter}>
     <p className={`${styles.textNormal} ${styles.text70}`}>
-    After many years of programming and building apps, I've used many different programming languages, frameworks, libraries and tools.
-    So I'm going to list the core technologies and tools I use often.
+    After many years of programming and building apps, I&apos;ve used many different programming languages, frameworks, libraries and tools.
+    So I&apos;m going to list the core technologies and tools I use often.
     </p>
     </div>
 
     <div className={styles.skillsAnimationContainer}>
 
     <div className={styles.skillsImages}>
-    <img className={`${styles.skillImage} ${styles.sIA1}`} src="/javascript.png" />
-    <img className={`${styles.skillImage} ${styles.sIA2}`} src="/javascript.png" />
-    <img className={`${styles.skillImage} ${styles.sIA3}`} src="/react.png" />
-    <img className={`${styles.skillImage} ${styles.sIA4}`} src="/typescript.png" />
-    <img className={`${styles.skillImage} ${styles.sIA5}`} src="/node.jpeg"/>
-    <img className={`${styles.skillImage} ${styles.sIA6}`} src="/mongodb.png" />
-    <img className={`${styles.skillImage} ${styles.sIA7}`} src="/go.png" />
-    <img className={`${styles.skillImage} ${styles.sIA8}`} src="/aws.png" />
+    <div className={`${styles.skillImage} ${styles.sIA1}`}>
+    <Image
+    src="/javascript.png" layout="fill"
+    alt="javascript logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA2}`}>
+    <Image
+    src="/javascript.png" layout="fill"
+    alt="javascript logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA3}`}>
+    <Image
+    src="/react.png" layout="fill"
+    alt="react logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA4}`}>
+    <Image
+    src="/typescript.png" layout="fill"
+    alt="typescript logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA5}`}>
+    <Image
+    src="/node.jpeg" layout="fill"
+    alt="node js logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA6}`}>
+    <Image
+    src="/mongodb.png" layout="fill"
+    alt="mongodb logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA7}`}>
+    <Image
+    src="/go.png" layout="fill" height={`100px`} width={'100px'}
+    alt="go logo"
+    />
+    </div>
+    <div className={`${styles.skillImage} ${styles.sIA8}`}>
+    <Image
+    src="/aws.png" layout="fill" height={`100px`} width={'100px'}
+    alt="aws logo"
+    />
+    </div>
     </div>
 
      <ul className={styles.skillsList}>
