@@ -72,6 +72,29 @@
   transition: transform .1s linear
 }
 
+.humburgerContainer {
+ display: none;
+ grid-row-gap: var(--gap-half);
+ cursor: pointer;
+}
+
+.humLine {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  border-radius: 5px;
+  transition: transform .5s
+}
+.humLine1 {
+  transform: rotate(45deg);
+  margin-top: var(--gap-half);
+}
+
+.humLine2 {
+  transform: rotate(-45deg);
+  margin-top: calc(-1 * var(--gap-half))
+}
+
 
 .sectPrimary {
   display:flex;
@@ -94,7 +117,37 @@
   .navLinksContainer {
     display: none;
   }
+  .humburgerContainer {
+   display: grid;
+  }
 }
+
+.smallScreenNav {
+  display: flex;
+  top: 50px;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  gap: var(--gap);
+  margin-left: calc(-1 * var(--gap));
+  padding-block: var(--gap);
+  width: 100%;
+  z-index: 99;
+  background-color: var(--background)
+}
+.smallScreenNav .navLink {
+  width: 100%;
+  padding-inline: var(--gap);
+  animation: fadeIn .5s ease-out;
+}
+.smallScreenNav .navLink::after {
+  display: none;
+}
+
+
+
 
 .textNormal {
     font-weight: 400;
