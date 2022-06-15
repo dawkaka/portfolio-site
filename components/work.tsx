@@ -1,4 +1,4 @@
-import {FunctionComponent, useEffect} from 'react'
+import {FunctionComponent} from 'react'
 
 import styles from '../styles/Home.module.scss'
 
@@ -58,7 +58,7 @@ const Work: FunctionComponent = () => {
       </ul>
       </div>
       </article>
-      
+
       </div>
 
       <div className={styles.lineContainer}>
