@@ -27,7 +27,7 @@ const Home: NextPage = () => {
        <div className={styles.heroContent}>
         <h1 className={`${styles.headerHuge} hello`}>YUSSIF MOHAMMED</h1>
         <p className={`${styles.text80} ${styles.textNormal}`}>
-         Hello, I am Yussif &quot;Dawkaka&quot; Mohammed, a flexible hard worker with over 4 years of experience in software engineering who is passionate
+         Hello, I am Yussif &quot;Dawkaka&quot; Mohammed, a flexible hard worker with over 3 years of experience in software engineering who is passionate
          about programming and ready to help companies expeditiously achieve their targets.
          </p>
          <ul className={styles.socialsContainer}>
