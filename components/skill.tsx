@@ -63,13 +63,13 @@ const Skills: FunctionComponent = () => {
     </div>
     <div className={`${styles.skillImage} ${styles.sIA7}`}>
     <Image
-    src="/go.png" layout="fill" height={`100px`} width={'100px'}
+    src="/go.png" layout="fill"
     alt="go logo"
     />
     </div>
     <div className={`${styles.skillImage} ${styles.sIA8}`}>
     <Image
-    src="/aws.png" layout="fill" height={`100px`} width={'100px'}
+    src="/aws.png" layout="fill"
     alt="aws logo"
     />
     </div>

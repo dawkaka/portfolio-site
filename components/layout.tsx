@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.scss"
 import NavBar from './navbar'
 import Footer from './footer'
 
-const Layout: FunctionComponent<{children: ReactNode[]}> = ({children}) => {
+const Layout: FunctionComponent<{children: ReactNode}> = ({children}) => {
     return (
         <div className={`${styles.container}`}>
         <Head>

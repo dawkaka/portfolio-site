@@ -6,12 +6,17 @@ import styles from '../styles/Home.module.scss'
 const NavItem: FunctionComponent<{title: string; styleColor: string}> = ({title, styleColor}) => {
   const handleClick = () => {
     const container = document.querySelector(`.${styles.navLinksContainer}`)
+    const lines = Array.from(document.querySelectorAll(`.${styles.humLine}`))
     if(!container) return
     container.classList.remove(`${styles.smallScreenNav}`)
+    if(!lines || lines.length < 2) return
+    lines[0].classList.remove(`${styles.humLine1}`)
+    lines[1].classList.remove(`${styles.humLine2}`)
     const sec = document.getElementById(title.toLowerCase())
     if(!sec) return
     sec.scrollIntoView()
   }
+  
   return (
      <li onClick={handleClick}
      className={`${styles.navLink} ${styles.textNormal}`}
@@ -38,9 +43,6 @@ const NavBar: FunctionComponent = () => {
       lines[0].classList.add(`${styles.humLine1}`)
       lines[1].classList.add(`${styles.humLine2}`)
     }
-
-
-
   }
 
    return(
