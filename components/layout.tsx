@@ -10,9 +10,21 @@ const Layout: FunctionComponent<{children: ReactNode}> = ({children}) => {
         <div className={`${styles.container}`}>
         <Head>
           <title>Yussif Mohammed | A flexible software engineer</title>
-          <meta name="description" content="My portfolio" />
+          <meta name="description" content="Yussif Mohammed, A flexible software developer's portfolio" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+          <meta property="og:url" content="https://dawkaka.vercel.app/" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Yussif Mohammed"/>
+          <meta property="og:description" content="Yussif Mohammed, A flexible software developer"/>
+          <meta property="og:image" content="https://dawkaka.vercel.app/mo-yussif.png" />
+          <meta property="og:image:alt" content="Yussif Mohammed"/>
+          <meta property="og:image:height" content="400" />
+          <meta property="og:image:width" content="520" />
+          <meta property="og:locale" content="en_GH" />
+          <meta property="og:site_name" content="Dawkaka" />
+          <meta charSet="utf-8" />
         </Head>
         <NavBar />
         {children}
