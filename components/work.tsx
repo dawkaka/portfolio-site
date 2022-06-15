@@ -1,6 +1,6 @@
 import {FunctionComponent, useEffect} from 'react'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const Work: FunctionComponent = () => {
 

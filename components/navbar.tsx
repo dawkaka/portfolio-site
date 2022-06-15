@@ -1,7 +1,7 @@
 import {FunctionComponent, CSSProperties} from 'react'
 
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const NavItem: FunctionComponent<{title: string; styleColor: string}> = ({title, styleColor}) => {
   const handleClick = () => {

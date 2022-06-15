@@ -1,7 +1,7 @@
 import {FunctionComponent} from 'react'
 import Image from 'next/image'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 
 const Skills: FunctionComponent = () => {

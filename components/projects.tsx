@@ -1,7 +1,7 @@
 import {FunctionComponent} from 'react'
 
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const ProjectItem: FunctionComponent<{image?: string,title:string,live?:string,
     source:string, discrp:string, noLive: boolean}> = ({noLive,image = "software.jpg", title, live, source, discrp}) => {

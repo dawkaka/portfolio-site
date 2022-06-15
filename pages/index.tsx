@@ -9,7 +9,7 @@ import Skills from '../components/skill'
 import Projects from '../components/projects'
 import Education from '../components/education'
 import createObserver from '../lib/observer'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
 
