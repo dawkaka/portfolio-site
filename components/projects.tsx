@@ -46,7 +46,7 @@ const Projects: FunctionComponent = ()=> {
 
      <div className={styles.projectItemsContainer}>
      <ProjectItem title="Path Finding Algorithms Visualizer"
-         discrp="A path finding algorithms visualizer made with react. You can visualizer both weighted and unweighted algorithms including; Dijskra's, A star, Breadth-first and Depth-first path finding algorithms."
+         discrp="A path finding algorithms visualizer made with react. You can visualizer both weighted and unweighted algorithms including; Dijkstra's, A star, Breadth-first and Depth-first path finding algorithms."
           live="https://reactpathfindvisualizer.netlify.app"
           source="https://github.com/dawkaka/path-finding-algorithms"
           image="Capture.PNG"
