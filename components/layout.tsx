@@ -18,7 +18,7 @@ const Layout: FunctionComponent<{children: ReactNode}> = ({children}) => {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Yussif Mohammed"/>
           <meta property="og:description" content="Yussif Mohammed, A flexible software developer"/>
-          <meta property="og:image" content="https://dawkaka.vercel.app/mo-yussif.png" />
+          <meta property="og:image" content="https://dawkaka.vercel.app/mo.jpg" />
           <meta property="og:image:alt" content="Yussif Mohammed"/>
           <meta property="og:image:height" content="400" />
           <meta property="og:image:width" content="520" />

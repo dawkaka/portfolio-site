@@ -30,10 +30,10 @@ const Education: FunctionComponent = () => {
      <div className={`${styles.workResp}`}>
      <h4>Hightlights</h4>
      <ul className={styles.respContainer}>
-     <li className={styles.resp}>WASSCE, A1 in Core Mathematics.</li>
-     <li className={styles.resp}>WASSCE, A1 in Elective Mathematics.</li>
-     <li className={styles.resp}>WASSCE, B2 in Phyiscs.</li>
-     <li className={styles.resp}>WASSCE, B2 in Intergrated Science.</li>
+     <li className={styles.resp}>A1 in Core Mathematics.</li>
+     <li className={styles.resp}>A1 in Elective Mathematics.</li>
+     <li className={styles.resp}>B2 in Phyiscs.</li>
+     <li className={styles.resp}>B2 in Intergrated Science.</li>
      </ul>
      </div>
 
@@ -51,7 +51,7 @@ const Education: FunctionComponent = () => {
      <h4>Hightlights</h4>
 
      <ul className={styles.respContainer}>
-     <li className={styles.resp}>Second class upper due to lack of interest.</li>
+     <li className={styles.resp}>Second class upper.</li>
      </ul>
 
      </div>
@@ -69,7 +69,7 @@ const Education: FunctionComponent = () => {
      <h4>Hightlights</h4>
 
      <ul className={styles.respContainer}>
-     <li className={styles.resp}>All the programming skill I have now, I learnt on the internet</li>
+     <li className={styles.resp}>All the programming skills I have now, I learnt on the internet</li>
      </ul>
 
      </div>
