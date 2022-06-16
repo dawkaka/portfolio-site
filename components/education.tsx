@@ -33,7 +33,6 @@ const Education: FunctionComponent = () => {
      <li className={styles.resp}>A1 in Core Mathematics.</li>
      <li className={styles.resp}>A1 in Elective Mathematics.</li>
      <li className={styles.resp}>B2 in Phyiscs.</li>
-     <li className={styles.resp}>B2 in Intergrated Science.</li>
      </ul>
      </div>
 
