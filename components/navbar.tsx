@@ -65,8 +65,7 @@ const NavBar: FunctionComponent = () => {
      </div>
      </nav>
      </div>
-     </header>
-
+      </header>
    )
 }
 

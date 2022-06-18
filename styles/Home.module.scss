@@ -19,15 +19,28 @@
     .heroMain {
      width: 1300px;
    }
+   .container{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+   }
 }
+
+@media only screen and (max-width: 1299px) {
+  .heroMain {
+    width: 100%;
+  }
+}
+
 
 .header {
   position: fixed;
+  top: 0;
+  z-index: 1;
   background-color: var(--background);
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
-  z-index: 1;
 
 }
 
@@ -38,8 +51,8 @@
   align-items: center;
   padding-block: var(--gap-half);
   padding-inline: var(--gap);
-}
 
+}
 
 .navLinksContainer {
   display: flex;
@@ -295,7 +308,7 @@
   }
 
   .headerNormal {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
  .textNormal {
