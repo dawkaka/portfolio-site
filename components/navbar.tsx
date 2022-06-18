@@ -16,7 +16,7 @@ const NavItem: FunctionComponent<{title: string; styleColor: string}> = ({title,
     if(!sec) return
     sec.scrollIntoView()
   }
-  
+
   return (
      <li onClick={handleClick}
      className={`${styles.navLink} ${styles.textNormal}`}
@@ -46,8 +46,9 @@ const NavBar: FunctionComponent = () => {
   }
 
    return(
+
+     <header className={styles.header}>
      <div className={styles.heroMain}>
-     <header>
      <nav className={styles.flexBetween}>
      <div className={styles.logoContainer}>
      <h1 className={styles.logo}>Dawkaka</h1>
@@ -63,8 +64,9 @@ const NavBar: FunctionComponent = () => {
      <div className={styles.humLine}></div>
      </div>
      </nav>
-     </header>
      </div>
+     </header>
+
    )
 }
 

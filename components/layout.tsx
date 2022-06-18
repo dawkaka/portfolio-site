@@ -7,7 +7,7 @@ import Footer from './footer'
 
 const Layout: FunctionComponent<{children: ReactNode}> = ({children}) => {
     return (
-        <div className={`${styles.container}`}>
+        <div style={{width: '100vw'}}>
         <Head>
           <title>Yussif Mohammed | A flexible software engineer</title>
           <meta name="description" content="Yussif Mohammed, A flexible software developer's portfolio" />

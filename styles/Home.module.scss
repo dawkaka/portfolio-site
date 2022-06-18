@@ -15,10 +15,20 @@
  background-color: var(--background)
 } */
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1300px) {
     .heroMain {
-     width: 1100px;
+     width: 1300px;
    }
+}
+
+.header {
+  position: fixed;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+
 }
 
 
@@ -28,13 +38,8 @@
   align-items: center;
   padding-block: var(--gap-half);
   padding-inline: var(--gap);
-  width: min(100%,1100px);
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  background-color: var(--background)
-
 }
+
 
 .navLinksContainer {
   display: flex;
@@ -189,7 +194,12 @@
   line-height: 1;
 }
 
-
+.headerNormal {
+  font-size: 1.8rem;
+  letter-spacing: -.05em;
+  font-weight: 700;
+  line-height: 1;
+}
 
 @keyframes headerbackground {
   from{
@@ -259,6 +269,11 @@
     font-size: 2.5rem
   }
 
+  .headerNormal {
+    font-size: 1.4rem;
+  }
+
+
   .textNormal {
     line-height: 2;
     letter-spacing: .1em
@@ -276,12 +291,18 @@
   }
 
   .headerBig {
-    font-size: 1.5rem
+    font-size: 1.3rem
   }
+
+  .headerNormal {
+    font-size: 1rem;
+  }
+
  .textNormal {
    line-height: 1.2;
    letter-spacing: .08em;
  }
+
 }
 
 .socialsContainer {
@@ -465,7 +486,8 @@
     border-radius: 50%;
     height: 10px;
     width: 9px;
-    border: 1px solid var(--styleColor)
+    border: 1px solid var(--styleColor);
+    background-color: var(--background)
   }
 
   .line2::after {
