@@ -1,15 +1,15 @@
-import type { NextPage } from 'next';
-import Image from 'next/image';
+import type { NextPage } from "next";
+import Image from "next/image";
 
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
-import Layout from '../components/layout';
-import Work from '../components/work';
-import Skills from '../components/skill';
-import Projects from '../components/projects';
-import Education from '../components/education';
-import createObserver from '../lib/observer';
-import styles from '../styles/Home.module.scss';
+import Layout from "../components/layout";
+import Work from "../components/work";
+import Skills from "../components/skill";
+import Projects from "../components/projects";
+import Education from "../components/education";
+import createObserver from "../lib/observer";
+import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
   useEffect(() => {
@@ -28,9 +28,9 @@ const Home: NextPage = () => {
                 </h1>
                 <p className={`${styles.text80} ${styles.textNormal}`}>
                   Hello, I am Yussif &quot;Dawkaka&quot; Mohammed, a flexible
-                  hard worker with over 3 years of experience in software
-                  engineering who is passionate about programming and ready to
-                  help companies expeditiously achieve their targets.
+                  hard worker with over 4 years of experience in software
+                  engineering who is passionate about programming, excellent
+                  problem solving skills and fast learner.
                 </p>
                 <ul className={styles.socialsContainer}>
                   <li className={styles.social}>
@@ -129,7 +129,7 @@ const Home: NextPage = () => {
                   <Image
                     priority
                     className={`${styles.myImage} ${styles.popLeft}`}
-                    src={'/mo-yussif.pngl'}
+                    src={"/mo-yussif.png"}
                     alt="dawkaka"
                     layout="fill"
                     onLoadingComplete={() => {}}
